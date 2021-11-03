@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Largeandsmallnumdemo
+public class Largenumdemo
 {
     public static void main(String[] args)
     {
@@ -21,11 +21,11 @@ public class Largeandsmallnumdemo
         System.out.println("Enter the Kth input number");
         k= scan.nextInt();
 
-        for(int i=0;i<arr.length;i++)
+        for(int i=0;i< arr.length;i++)
         {
-            for(int j=i+1;j<arr.length;j++)
+            for(int j=i+1;j< arr.length;j++)
             {
-                if(arr[i]<arr[j]) //to get largest element
+                if(arr[i]<arr[j])
                 {
                     temp= arr[i];
                     arr[i]= arr[j];
@@ -36,21 +36,11 @@ public class Largeandsmallnumdemo
             }
         }
         System.out.println(k +"th largest element is: "+arr[k-1]);
-        for(int i=0;i< arr.length;i++)
-        {
-            for(int j=i+1;j< arr.length;j++)
-            {
-                if (arr[i]>arr[j]) //to get smallest element
-                {
-                    temp=arr[i];
-                    arr[i]=arr[j];
-                    arr[j]=temp;
-                }
-            }
-        }
-        System.out.println(k+"th smallest element is: "+arr[k-1]);
+        System.out.println(k+"th smallest number "+arr[num-k]);
+
     }
 
 }
+
 
 
